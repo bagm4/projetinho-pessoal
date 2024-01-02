@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Volei App</title>
+</head>
+<body>
+    <header>
+        <h1>VoleiApp</h1>
+    </header>
+    
+    <div class="container">
+        <h3>Quem jogou por:</h3>
+        <form class="formContainer">
+            <label for="hora2">2 horas:</label>
+            <input type="number" name="hora2" id="hora2" placeholder="Numero de jogadores">
+            <label for="hora1">1 hora:</label>
+            <input type="number" name="hora1" id="hora1" placeholder="Numero de jogadores">
+            <button class="btn">calcular</button>
+        </form>
+        <div class="containerResposta">
+            <h2>Resultados</h2>
+            <p>2H: <span class="respostaH2"></span></p>
+            <p>1H <span class="respostaH1"></span></p>
+        </div>
+        <div class="mensagemError">
+            <p>Preencha os campos</p>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
