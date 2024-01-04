@@ -22,7 +22,7 @@ window.document.querySelector('.formContainer').addEventListener('submit', funct
 
     function calculo2h() {
         if (h1 == 0){
-            return valorh2 = (50 / h2).toFixed(2)
+            return valorh2 = (100 / h2).toFixed(2)
         }
         if (h2 == 0){
             return valorh2 = 0
