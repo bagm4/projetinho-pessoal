@@ -14,15 +14,24 @@ window.document.querySelector('.formContainer').addEventListener('submit', funct
     validationValor();
 
     function calculo1h() {
+        if (h1 == 0){
+            return valorh1 = 0
+        }
         return valorh1 = (50 / h1).toFixed(2);
     }
 
     function calculo2h() {
+        if (h1 == 0){
+            return valorh2 = (50 / h2).toFixed(2)
+        }
+        if (h2 == 0){
+            return valorh2 = 0
+        }
         return valorh2 = ((50 / h2) + (50 / h1)).toFixed(2);
     }
 
     function validationValor() {
-        if (!isNaN(h1) && !isNaN(h2) && h1 !== 0 && h2 !== 0) {
+        if (!isNaN(h1) && !isNaN(h2)) {
             calculo1h();
             calculo2h();
             hora1.value = null;
